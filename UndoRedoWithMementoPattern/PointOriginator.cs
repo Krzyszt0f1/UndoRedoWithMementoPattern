@@ -1,12 +1,12 @@
 namespace UndoRedoWithMementoPattern;
 
-// Point acts here as an Originator, it produces snapshots (IPoint/PointSnapshots)
-// of Point's current state
-public class Point
+// PointOriginator produces snapshots (IPoint/PointSnapshots)
+// of PointOriginator's current state
+public class PointOriginator
 {
     private Position _position;
 
-    public Point(Position position)
+    public PointOriginator(Position position)
     {
         _position = position;
     }
